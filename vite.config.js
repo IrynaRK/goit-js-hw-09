@@ -6,6 +6,7 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    server: { port: 5173 },
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
